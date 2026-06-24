@@ -1,0 +1,110 @@
+/* Body & Background */
+body, .stApp {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b195);
+    color: #333;
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+    color: #444;
+    font-weight: 600;
+}
+
+/* Cards & Containers */
+.stContainer, .stButton, .stTextInput, .stFileUploader, .stTextArea {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stContainer:hover, .stButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Buttons */
+.stButton button {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.stButton button:hover {
+    background-color: #5a4bd8;
+    transform: translateY(-2px);
+}
+
+/* Inputs */
+.stTextInput input, .stTextArea textarea, .stFileUploader input {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+/* Navbar / Menu */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255,255,255,0.95);
+    padding: 10px 0;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+section[data-testid="stSidebar"] {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+section[data-testid="stSidebar"] .stRadio > div {
+    gap: 0.5rem;
+}
+section[data-testid="stSidebar"] label {
+    color: white !important;
+    font-weight: 600;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+/* FAB */
+.fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #ff7675;
+    color: white;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 56px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+.fab:hover {
+    transform: translateY(-2px);
+    background: #e84393;
+}
+
